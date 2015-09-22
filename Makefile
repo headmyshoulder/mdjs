@@ -1,0 +1,2 @@
+molecular_dynamics.js: molecular_dynamics_js_to_c.js molecular_dynamics.cpp
+	~/emscripten/emscripten/em++ molecular_dynamics.cpp -Iodeint-v2/ -Iboost --js-library molecular_dynamics_js_to_c.js -std=c++11 -o molecular_dynamics.js
